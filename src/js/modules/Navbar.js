@@ -112,7 +112,16 @@ const getCurrentIcon = () => (themeBtn.matches(`.${iconTheme}`) ? 'bx-moon' : 'b
 
 // Validate if the user previously chose a topic
 
+// if(selectedTheme === 'dark'){
+// 	document.body.classList.add(darkTheme)
+// 	themeBtn.classList.add(iconTheme)
+// }else{
+// 	document.body.classList.remove(darkTheme)
+// 	themeBtn.classList.remove(iconTheme)
+
+// }
 if (selectedTheme) {
+
 	document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
 	themeBtn.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
 }
