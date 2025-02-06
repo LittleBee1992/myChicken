@@ -35,7 +35,7 @@ export default defineConfig( {
 		rollupOptions: {
 			input: {
 				main: resolve(__dirname, 'index.html'),
-				login: resolve(__dirname, './src/pages/3color.html'),
+				login: resolve(__dirname, './src/pages/login/login.html'),
 			},
 			// external:['collect.js']
 		},
